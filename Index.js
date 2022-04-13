@@ -15,6 +15,20 @@ app.use(express.json())
 let users=[]
 let Publicaciones=[]
 
+app.get('/', async (req, res) => {
+    //si hay una sesion mostrar welcome
+
+    //sino unwelcome :v
+});
+
+app.get('/login', async (req, res) => {
+    res.json("aaa")
+});
+
+app.post('/login', async (req, res) => {
+    //recibir credenciales
+});
+
 app.get('/usuarios', async (req, res) => {
     res.json(users)
 });
