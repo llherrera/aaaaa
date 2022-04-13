@@ -35,6 +35,9 @@ app.post('/usuarios', async (req, res) => {
         res.status(400).end()
     }
 });
+app.post('/publicaciones', async (req, res) => {
+    
+});
 
 
 app.use(async (req,res) => {
