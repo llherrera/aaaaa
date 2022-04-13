@@ -35,13 +35,18 @@ app.post('/usuarios', async (req, res) => {
         res.status(400).end()
     }
 });
+
+app.get('/publicaciones', async (req, res) => {
+    res.json(users)
+});
+
 app.post('/publicaciones', async (req, res) => {
     
 });
 
 
 app.use(async (req,res) => {
-    res.status(404).json("HolaMundo")
+    res.status(404).json("Error Success")
     });
 
 app.listen(8080);
